@@ -19,5 +19,5 @@ Based on lab vs. natural, are the lab-grown diamonds rated higher?
 Are lab-grown cheaper and do you get more value? 
 Hypothesis: Lab-grown diamonds will have a more affordable price for similar characteristics of that of a natural diamond. 
 Database Engine: Postgres
-Machine Learning Model: Regression
+Machine Learning Model: Regression, If enough time we will do a deep learning of the dataset to determine if we can predict whether a diamond is lab grown or natural based off of user inputed characteristics.
 Live Predictions: Yes!
