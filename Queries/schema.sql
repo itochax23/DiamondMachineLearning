@@ -15,3 +15,4 @@ CREATE TABLE diamonds (
 DROP TABLE diamonds;
 
 select * from diamonds;
+
