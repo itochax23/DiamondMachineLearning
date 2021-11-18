@@ -9,8 +9,8 @@ Description of source data: We have a data set from Kaggle of 119,307 samples of
 * Link to dataset: https://www.kaggle.com/miguelcorraljr/brilliant-diamonds
 
 Characteristics in dataset: 
-Shape: Round, Emerald, etc.
-Price (we have in dataset and will use for live predictions): US dollars
+* Shape: Round, Emerald, etc.
+* Price (we have in dataset and will use for live predictions): US dollars
 * Carat (Unit of measurement used to describe the weight of a diamond)
 * Cut: Ideal, Very Good, etc.
 * Color: Natural color or lack of color visible within a diamond, based on the GIA grade scale
@@ -30,3 +30,20 @@ Price (we have in dataset and will use for live predictions): US dollars
 * Database Engine: Postgres
 * Machine Learning Model: Linear Regression for predicting price; if enough time, we will use classifier to decide whether it’s lab grown or natural.
 * Live Predictions: Yes
+
+## Segment 2 deliverables:
+Initial ML model is developed. Must have a Jupyter notebook containing:
+* Description of preliminary data pre-processing
+* Description of features used in the model
+* Description of how data was split for training/testing
+* Explanation of model choice, including benefits and limitations
+* Preliminary model evaluation
+ 
+### Database development
+* Instructions on how to create the database
+* Database schema scripts
+* Jupyter notebook for ETL
+ 
+### Dashboard blueprint
+* Interactive elements
+* Tools/technologies for the creating the dashboard
