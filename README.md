@@ -4,7 +4,7 @@
 text and image. Whatcha doin. Why?
 
 ### Role Distribution
-Each team member has choosen a shape, with each shape responsible for a specific task. The shapes to choose from are square, circle, triangle, and X. However, the one initially assigned the X role will transition through the other roles for the remaining segments.
+Each team member has choosen a shape, with each shape responsible for a specific task. The shapes to choose from are square, circle, triangle, and X. However, the one initially assigned the X role will transition through the other roles for the remaining segments.  
 ■: Primary for setup of github repository, and ensuring everyone has their own branch to work from. Creating visualizations to help determine dashboards that best present data for storytelling.    
 ●: Primary for setting up a machine learning model, from concept to execution, with input from the team.    
 ▲: Primary for creating mockup database, for testing and submission, with input from the team. Contributes to interactive elements and web presence.    
