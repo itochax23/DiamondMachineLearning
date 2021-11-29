@@ -75,6 +75,7 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
 ### Database development
 * Instructions on how to create the database
 * Database schema scripts
+![Schema Script](Querries/schema.sql)
 * Jupyter notebook for ETL
  
 ### Dashboard blueprint
