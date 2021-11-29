@@ -81,7 +81,7 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
  
 ### Dashboard blueprint
 * Interactive elements
-* Tools/technologies for the creating the dashboard\
+* Tools/technologies for the creating the dashboard: HTML/CSS for website. Flask for live prediction. 
 **Title: How do you like your diamonds?**
 **Subtitle: Predicting lab-grown or natural diamonds.**
 Background Image: Diamonds\
@@ -90,18 +90,19 @@ Background Image: Diamonds\
 * About Button - Jumps to Project Overview Section
 * Live Prediction Button - Jumps to Live Prediction
 * Analysis Button - Jumps to Analysis
-* Team Button
+* Team Button\
 **Project Overview Section:**
-* Intro: What the project is about and what the user will be doing\
+* Intro: What the project is about and what the user will be doing.\
 **Live Prediction Section:**
-* This will have the prediction tool to input xyz for a predicted output
-* The user will input the data.\
+* This will have the prediction tool to input xyz for a predicted output.
+* The user will input the data.
+* Pre-chosen inputs as an option for user. (?)\
 **Analysis Section:**
 * This will have the model and accuracy results.
 * Along with some possible visuals.\
-Team Section:
+**Team Section:**
 *  Contains our names and GitHub urls.
-*  Contains credits at the bottom
+*  Contains credits at the bottom.
 
 
  
