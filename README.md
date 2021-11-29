@@ -17,6 +17,21 @@ Text and images and links, etc.
 Text and keep it short!
 
 ---
+
+# Technologies Used
+## Data Cleaning and Analysis
+Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
+
+## Database Storage
+Mongo is the database we intend to use, and we will integrate Flask to display the data.
+
+## Machine Learning
+SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
+
+## Dashboard
+In addition to using a Flask template, we will also integrate Tableau for a fully functioning and interactive dashboard.
+
+---
 # Instructions
 ## Deliverable #1:
 Description of source data: We have a data set from Kaggle of 119,307 samples of diamonds.
@@ -44,21 +59,6 @@ Characteristics in dataset:
 * Database Engine: Postgres
 * Machine Learning Model: Logistic Regression for predicting type (lab vs. natural).
 * Live Predictions: Yes
-
----
-
-# Technologies Used
-## Data Cleaning and Analysis
-Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
-
-## Database Storage
-Mongo is the database we intend to use, and we will integrate Flask to display the data.
-
-## Machine Learning
-SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
-
-## Dashboard
-In addition to using a Flask template, we will also integrate Tableau for a fully functioning and interactive dashboard.
 
 ---
 
