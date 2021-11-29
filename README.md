@@ -42,7 +42,7 @@ Characteristics in dataset:
 ### Process decisions made
 * Hypothesis: Lab-grown diamonds will have a more affordable price for similar characteristics of that of a natural diamond. 
 * Database Engine: Postgres
-* Machine Learning Model: Linear Regression for predicting price; if enough time, we will use classifier to decide whether it’s lab grown or natural.
+* Machine Learning Model: Logistic Regression for predicting type (lab vs. natural).
 * Live Predictions: Yes
 
 ---
