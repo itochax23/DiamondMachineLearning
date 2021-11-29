@@ -74,9 +74,10 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
  
 ### Database development
 * Instructions on how to create the database
-* Database schema scripts
+* Database schema scripts:\
 ![Schema Script](Querries/schema.sql)
-* Jupyter notebook for ETL
+* Jupyter notebook for ETL:\
+![ETL - Data Cleaning](Diamonds_Data_Cleaning.ipynb)
  
 ### Dashboard blueprint
 * Interactive elements
