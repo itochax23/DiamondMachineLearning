@@ -81,7 +81,7 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
  
 ### Dashboard blueprint
 * Interactive elements
-* Tools/technologies for the creating the dashboard: HTML/CSS for website. Flask for live prediction. 
+* Tools/technologies for the creating the dashboard: HTML/CSS for website. Flask for live prediction.\
 **Title: How do you like your diamonds?**
 **Subtitle: Predicting lab-grown or natural diamonds.**
 Background Image: Diamonds\
