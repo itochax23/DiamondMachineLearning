@@ -69,6 +69,8 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
 * Description of how data was split for training/testing
 * Explanation of model choice, including benefits and limitations
 * Preliminary model evaluation
+
+![Diamond Logistic Model](Diamond_Model.ipynb)
  
 ### Database development
 * Instructions on how to create the database
