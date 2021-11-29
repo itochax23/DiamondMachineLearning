@@ -62,7 +62,7 @@ In addition to using a Flask template, we will also integrate Tableau for a full
 
 ---
 
-## Segment 2 deliverables:
+## Deliverable #2:
 Initial ML model is developed. Must have a Jupyter notebook containing:
 * Description of preliminary data pre-processing
 * Description of features used in the model
