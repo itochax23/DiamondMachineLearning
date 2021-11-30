@@ -79,7 +79,10 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
 ![ETL - Data Cleaning](Diamonds_Data_Cleaning.ipynb)
 * Instructions on how to create the database
 * Download dataset from: https://www.kaggle.com/miguelcorraljr/brilliant-diamonds
-* Import dataset as a dataframe in Jupyter Notebook
+* Write querries to create table in PgAdmin.
+* Import dataset into table.
+* Export table to a csv file.
+* Import csv as a dataframe in Jupyter Notebook
 * Clean dataframe by converting the following non-numerical columns to numerical reference points:
  - Shape column (Alphabetical): Asscher = 1, Cushion = 2, Emerald = 3, Heart = 4, Marquise = 5, Oval = 6, Pear = 7, Princess = 8, Radiant = 9, Round = 10
  - Cut column (lowest grade to highest grade): Fair = 1, Good = 2, Very Good = 3, Ideal = 4, Super Ideal = 5
@@ -93,8 +96,8 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
 ### Dashboard blueprint
 * Interactive elements
 * Tools/technologies for the creating the dashboard: HTML/CSS for website. Flask for live prediction.\
-**Title: How do you like your diamonds?**
-**Subtitle: Predicting lab-grown or natural diamonds.**
+**Title: How do you like your diamonds?**\
+**Subtitle: Predicting lab-grown or natural diamonds.**\
 Background Image: Diamonds\
 **Header:**
 * Home Button
