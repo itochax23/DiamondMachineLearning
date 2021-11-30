@@ -70,8 +70,8 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
 * Explanation of model choice, including benefits and limitations
 * Preliminary model evaluation
 
-![Diamond Logistic Model](Diamond_Model.ipynb)
- 
+<a href="https://github.com/itochax23/DiamondMachineLearning/blob/388c5850a537244451715b2b2ed2b320101851cb/Diamond_Model.ipynb">Diamond_Model.ipynb
+
 ### Database development
 * Database schema scripts:\
 ![Schema Script](Querries/schema.sql)
@@ -84,36 +84,42 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
 * Export table to a csv file.
 * Import csv as a dataframe in Jupyter Notebook
 * Clean dataframe by converting the following non-numerical columns to numerical reference points:
- - Shape column (Alphabetical): Asscher = 1, Cushion = 2, Emerald = 3, Heart = 4, Marquise = 5, Oval = 6, Pear = 7, Princess = 8, Radiant = 9, Round = 10
- - Cut column (lowest grade to highest grade): Fair = 1, Good = 2, Very Good = 3, Ideal = 4, Super Ideal = 5
- - Color column (lowest grade to highest grade): J = 1, I = 2, H = 3, G = 4, F = 5, E = 6, D = 7
- - Clarity column (lowest grade to highest grade): SI2 = 1, SI1 = 2, VS2 = 3, VS1 = 4, VVS2 = 5, VVS1 = 6, IF = 7, FL = 8
- - Report column (no particular order): GIA = 1, HRD = 2, IGI = 3, GCAL = 4
- - Type column (boolean values): natural = 1, lab = 2
+  * Shape column (Alphabetical): Asscher = 1, Cushion = 2, Emerald = 3, Heart = 4, Marquise = 5, Oval = 6, Pear = 7, Princess = 8, Radiant = 9, Round = 10
+  * Cut column (lowest grade to highest grade): Fair = 1, Good = 2, Very Good = 3, Ideal = 4, Super Ideal = 5
+  * Color column (lowest grade to highest grade): J = 1, I = 2, H = 3, G = 4, F = 5, E = 6, D = 7
+  * Clarity column (lowest grade to highest grade): SI2 = 1, SI1 = 2, VS2 = 3, VS1 = 4, VVS2 = 5, VVS1 = 6, IF = 7, FL = 8
+  * Report column (no particular order): GIA = 1, HRD = 2, IGI = 3, GCAL = 4
+  * Type column (boolean values): natural = 1, lab = 2
 * Further clean the dataframe by removing the unneeded url and date_fetched column
 * Export the cleaned dataframe into a csv file.
  
 ### Dashboard blueprint
 * Interactive elements
 * Tools/technologies for the creating the dashboard: HTML/CSS for website. Flask for live prediction.\
-**Title: How do you like your diamonds?**\
-**Subtitle: Predicting lab-grown or natural diamonds.**\
-Background Image: Diamonds\
+**Title: How do you like your diamonds?**  
+
+**Subtitle:** Predicting lab-grown or natural diamonds.
+Background image: Diamonds  
+
 **Header:**
 * Home Button
 * About Button - Jumps to Project Overview Section
 * Live Prediction Button - Jumps to Live Prediction
 * Analysis Button - Jumps to Analysis
-* Team Button\
-**Project Overview Section:**
-* Intro: What the project is about and what the user will be doing.\
-**Live Prediction Section:**
+* Team Button
+
+**Project Overview Section:**. 
+* Intro: What the project is about and what the user will be doing.  
+
+**Live Prediction Section:**. 
 * This will have the prediction tool to input xyz for a predicted output.
 * The user will input the data.
-* Pre-chosen inputs as an option for user. (?)\
-**Analysis Section:**
+* Pre-chosen inputs as an option for user. (?)  
+
+**Analysis Section:**  
 * This will have the model and accuracy results.
-* Along with some possible visuals.\
+* Along with some possible visuals.  
+
 **Team Section:**
 *  Contains our names and GitHub urls.
 *  Contains credits at the bottom.
