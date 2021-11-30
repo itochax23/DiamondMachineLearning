@@ -88,7 +88,7 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
  - Report column (no particular order): GIA = 1, HRD = 2, IGI = 3, GCAL = 4
  - Type column (boolean values): natural = 1, lab = 2
 * Further clean the dataframe by removing the unneeded url and date_fetched column
-* Export the cleaned dataframe into a csv file
+* Export the cleaned dataframe into a csv file.
  
 ### Dashboard blueprint
 * Interactive elements
