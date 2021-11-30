@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Diamond Predictor</title>
+
+</head>
+<body>
+  
+<div class = "ML_inputs">
+  <h1> Predict Diamond Type</h1>
+    <h3> Enter the following values to predict the Diamond type</h3>
+
+    <!-- Input section using a form and the Hypertext Transfer Protocol (HTTP) POST method -->
+    <!-- Pass the form input to 'url_for'.  Make sure that the url_for argument matches the route method name  in app.py -->
+    
+      <!-- We are using Jinja if statement to fill the previous values from the Flask server if data has been entered -->
+      <input type ="text" id = "shape" placeholder = "Round" />
+      <input type ="text" id = "cut"  placeholder = "Fair" />
+      <input type ="text" id = "color"  placeholder = "J" />
+      <input type ="text" id = "clarity"  placeholder = "SI2" />
+      <input type ="text" id = "carat"  placeholder = "0.30" />
+      <input type ="text" id = "price"  placeholder = "400" />
+      <input type ="text" id = "report"  placeholder = "GIA" />
+    <!-- Add in drop downs - google it -->
+      <button onclick = "submit()" class ="btn"> Predict</button>
+    
+
+    <br>
+    <br>
+<script src = "/static/Diamonds_JS.js"></script>
+
+</div>
+  
+
+</body>
+
+</html>
