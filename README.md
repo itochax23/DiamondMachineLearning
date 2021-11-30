@@ -78,6 +78,17 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
 ![Schema Script](Querries/schema.sql)
 * Jupyter notebook for ETL:\
 ![ETL - Data Cleaning](Diamonds_Data_Cleaning.ipynb)
+* Download dataset from: https://www.kaggle.com/miguelcorraljr/brilliant-diamonds
+* Import dataset as a dataframe in Jupyter Notebook
+* Clean dataframe by converting the following non-numerical columns to numerical reference points:
+ - Shape column (Alphabetical): Asscher = 1, Cushion = 2, Emerald = 3, Heart = 4, Marquise = 5, Oval = 6, Pear = 7, Princess = 8, Radiant = 9, Round = 10
+ - Cut column (lowest grade to highest grade): Fair = 1, Good = 2, Very Good = 3, Ideal = 4, Super Ideal = 5
+ - Color column (lowest grade to highest grade): J = 1, I = 2, H = 3, G = 4, F = 5, E = 6, D = 7
+ - Clarity column (lowest grade to highest grade): SI2 = 1, SI1 = 2, VS2 = 3, VS1 = 4, VVS2 = 5, VVS1 = 6, IF = 7, FL = 8
+ - Report column (no particular order): GIA = 1, HRD = 2, IGI = 3, GCAL = 4
+ - Type column (boolean values): natural = 1, lab = 2
+* Further clean the dataframe by removing the unneeded url and date_fetched column
+* Export the cleaned dataframe into a csv file
  
 ### Dashboard blueprint
 * Interactive elements
