@@ -79,7 +79,7 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
 ![ETL - Data Cleaning](Diamonds_Data_Cleaning.ipynb)
 * Instructions on how to create the database
 * Download dataset from: https://www.kaggle.com/miguelcorraljr/brilliant-diamonds
-* Write querries to create table in PgAdmin.
+* Write queries to create table in PgAdmin.
 * Import dataset into table.
 * Export table to a csv file.
 * Import csv as a dataframe in Jupyter Notebook
