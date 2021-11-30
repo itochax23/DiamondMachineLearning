@@ -73,11 +73,11 @@ Initial ML model is developed. Must have a Jupyter notebook containing:
 ![Diamond Logistic Model](Diamond_Model.ipynb)
  
 ### Database development
-* Instructions on how to create the database
 * Database schema scripts:\
 ![Schema Script](Querries/schema.sql)
 * Jupyter notebook for ETL:\
 ![ETL - Data Cleaning](Diamonds_Data_Cleaning.ipynb)
+* Instructions on how to create the database
 * Download dataset from: https://www.kaggle.com/miguelcorraljr/brilliant-diamonds
 * Import dataset as a dataframe in Jupyter Notebook
 * Clean dataframe by converting the following non-numerical columns to numerical reference points:
