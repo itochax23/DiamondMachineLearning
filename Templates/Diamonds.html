@@ -44,7 +44,7 @@
       <div class="container">
           <div class="masthead-heading text-uppercase">How Do You Like Your Diamonds?</div>
           <div class="masthead-subheading">Predicting whether a diamond is natural or lab grown.</div>
-          <a class="btn btn-primary btn-xl text-uppercase" href="#services">Let's get started</a>
+          <a class="btn btn-primary btn-xl text-uppercase" href="#about">Let's get started</a>
       </div>
     </header>
 
@@ -71,7 +71,7 @@
     <section class="prediction-section text-center" id="prediction">
       <div class = "ML_inputs">
         <h2 class="section-heading text-uppercase"> Predict Diamond Type</h2>
-          <p class="section-subheading text-muted"> Enter the following values to predict the Diamond type:</p>
+          <p class="section-subheading text-muted"> Enter the following values and characteristics to predict the Diamond type:</p>
 
           <!-- Input section using a form and the Hypertext Transfer Protocol (HTTP) POST method -->
           <!-- Pass the form input to 'url_for'.  Make sure that the url_for argument matches the route method name  in app.py -->
@@ -85,7 +85,7 @@
             <input type ="text" id = "price"  placeholder = "400" />
             <input type ="text" id = "report"  placeholder = "GIA" />
             <!-- Add in drop downs - google it -->
-            <button onclick = "submit()" class ="btn"> Predict</button>
+            <button onclick = "submit()" class ="btn btn-secondary text-uppercase"> Predict</button>
     
 
           <br>
@@ -114,22 +114,51 @@
       </div>
     </section>
 
-    <!-- Signup-->
-    <section class="signup-section" id="signup">
-        <div class="container px-4 px-lg-5">
-            <!-- <div class="row gx-4 gx-lg-5"> -->
-                <!-- <div class="col-md-10 col-lg-8 mx-auto text-center"> -->
-                    <!-- <i class="far fa-paper-plane fa-2x mb-2 text-white"></i> -->
-                    <!-- <h2 class="text-white mb-5">Subscribe to receive updates!</h2> -->
-                    <!-- <form class="form-signup d-flex flex-column flex-sm-row">
-                        <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
-                        <button class="btn btn-primary" type="submit">Subscribe</button>
-                    </form> -->
-                <!-- </div> -->
-            <!-- </div> -->
-        </div>
+    <!-- Team-->
+    <section class="page-section bg-light" id="team">
+      <div class="container">
+          <div class="text-center">
+              <h2 class="section-heading text-uppercase">Our Team</h2>
+              <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+          </div>
+          <div class="row">
+              <div class="col-lg-4">
+                  <div class="team-member">
+                      <!-- <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." /> -->
+                      <h4>Sarah Volk</h4>
+                      <p class="text-muted">Team Member</p>
+                      <a class="btn btn-dark btn-social mx-2" href="https://github.com/volkx075"><i class="fab fa-github"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="team-member">
+                      <!-- <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." /> -->
+                      <h4>Charlie Ito</h4>
+                      <p class="text-muted">Team Member</p>
+                      <a class="btn btn-dark btn-social mx-2" href="https://github.com/itochax23"><i class="fab fa-github"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="team-member">
+                      <!-- <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." /> -->
+                      <h4>Andy LaBounty</h4>
+                      <p class="text-muted">Team Member</p>
+                      <a class="btn btn-dark btn-social mx-2" href="https://github.com/taestylobster"><i class="fab fa-github"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="team-member">
+                    <!-- <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." /> -->
+                    <h4>Jenn Pardue</h4>
+                    <p class="text-muted">Team Member</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/jjpardue"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+          </div>
+      </div>
     </section>
-    <!-- Contact-->
+
+    <!-- Contact
     <section class="contact-section bg-black">
       <div class="container px-4 px-lg-5">
           <div class="row gx-4 gx-lg-5">
@@ -174,23 +203,41 @@
                   </div>
               </div>
           </div>
-          <!-- <div class="social d-flex justify-content-center">
+          <div class="social d-flex justify-content-center">
               <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
               <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
               <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
           </div> -->
       </div>
-    </section>
-    <!-- Footer-->
-    <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Diamonds Type Prediction 2021 
-      <br> <br>
-      <br> <br> Credits: 
-      <br> <br> Built with Bootstrap ?. 
-      <!-- <br> <br> Photos by <a href="https://freeimages.com/photographer/egoforall-29784">Sanya Obsivac</a> from <a href="https://freeimages.com">FreeImages</a> & <a href="https://freeimages.com/photographer/xmen-49951">Joe Parkin</a> from <a href="https://freeimages.com">FreeImages</a> </div></footer> -->
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">
+            Credits:
+            <br> <br> Built with Bootstrap 5.1.3. 
+            <!-- <br> <br> Photos by <a href="https://www.popularmechanics.com/science/environment/a22173683/scientists-find-quadrillions-of-tons-of-diamonds-beneath-earths-surface/">Mina De La O</a> from <a href="https://freeimages.com">gettyimages</a> </div></footer> -->
+          </p>
+        </div>
+          <div class="row align-items-center">
+              <div class="col-lg-4 text-lg-start">Copyright &copy; Diamond Type Prediction 2021</div>
+              <div class="col-lg-4 my-3 my-lg-0">
+                  <a class="btn btn-dark btn-social mx-2" href="https://github.com/itochax23/DiamondMachineLearning"><i class="fab fa-github"></i></a>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                  <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                  <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+              </div>
+          </div>
+      </div>
+    </footer>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="/static/js/scripts.js"></script>
+    <script src="/static/js/scripts.js"></script> -->
   </body>
 
 </html>

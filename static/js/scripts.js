@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', event => {
           }
       });
   });
-
+}
 
 function getData() {
   const shape = document.getElementById("shape").value;
