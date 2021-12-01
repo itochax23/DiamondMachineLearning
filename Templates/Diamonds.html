@@ -1,39 +1,184 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Diamond Predictor</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>How Do You Like Your Diamonds?</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/static/css/styles.css" rel="stylesheet" />
 
-</head>
-<body>
-  
-<div class = "ML_inputs">
-  <h1> Predict Diamond Type</h1>
-    <h3> Enter the following values to predict the Diamond type</h3>
+  </head>
+  <body id="page-top">
 
-    <!-- Input section using a form and the Hypertext Transfer Protocol (HTTP) POST method -->
-    <!-- Pass the form input to 'url_for'.  Make sure that the url_for argument matches the route method name  in app.py -->
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Prediction</a></li>
+                <li class="nav-item"><a class="nav-link" href="#analysis">Analysis</a></li>
+                <li class="nav-item"><a class="nav-link" href="#signup">Team</a></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container">
+          <div class="masthead-heading text-uppercase">How Do You Like Your Diamonds?</div>
+          <div class="masthead-subheading">Predicting whether a diamond is natural or lab grown.</div>
+          <a class="btn btn-primary btn-xl text-uppercase" href="#services">Let's get started</a>
+      </div>
+    </header>
+
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+      <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-lg-8">
+                  <h2 class="section-heading text-uppercase">Project Overview</h2>
+                  <p class="section-subheading text-muted">
+                    Our overview.
+                    
+                    <br> <br>Our dataset was collected by Brilliant Earth.  View the 
+                    <a href="https://www.kaggle.com/miguelcorraljr/brilliant-diamonds">Diamond Dataset</a>
+                    here.  The data was scraped on November 29th, 2020.  The data contains 8 characteristics of a diamond.
+                    We used logistic regression to predict if a diamond is natural or lab grown.
+                    
+                  </p>
+              </div>
+            </div>
+          <!-- <img class="img-fluid" src="assets/img/ipad.png" alt="..." /> -->
+        </div>
+      </section>
+
+    <section class="prediction-section" id="prediction"></section>
+      <div class = "ML_inputs">
+        <h2 class="section-heading text-uppercase"> Predict Diamond Type</h2>
+          <h3 class="section-subheading text-muted"> Enter the following values to predict the Diamond type:</h3>
+
+          <!-- Input section using a form and the Hypertext Transfer Protocol (HTTP) POST method -->
+          <!-- Pass the form input to 'url_for'.  Make sure that the url_for argument matches the route method name  in app.py -->
     
-      <!-- We are using Jinja if statement to fill the previous values from the Flask server if data has been entered -->
-      <input type ="text" id = "shape" placeholder = "Round" />
-      <input type ="text" id = "cut"  placeholder = "Fair" />
-      <input type ="text" id = "color"  placeholder = "J" />
-      <input type ="text" id = "clarity"  placeholder = "SI2" />
-      <input type ="text" id = "carat"  placeholder = "0.30" />
-      <input type ="text" id = "price"  placeholder = "400" />
-      <input type ="text" id = "report"  placeholder = "GIA" />
-    <!-- Add in drop downs - google it -->
-      <button onclick = "submit()" class ="btn"> Predict</button>
+            <!-- We are using Jinja if statement to fill the previous values from the Flask server if data has been entered -->
+            <input type ="text" id = "shape" placeholder = "Round" />
+            <input type ="text" id = "cut"  placeholder = "Fair" />
+            <input type ="text" id = "color"  placeholder = "J" />
+            <input type ="text" id = "clarity"  placeholder = "SI2" />
+            <input type ="text" id = "carat"  placeholder = "0.30" />
+            <input type ="text" id = "price"  placeholder = "400" />
+            <input type ="text" id = "report"  placeholder = "GIA" />
+            <!-- Add in drop downs - google it -->
+            <button onclick = "submit()" class ="btn"> Predict</button>
     
 
-    <br>
-    <br>
-<script src = "/static/Diamonds_JS.js"></script>
+          <br>
+          <br>
+        <script src = "/static/Diamonds_JS.js"></script>
 
-</div>
-  
+      </div>
+    </section>
 
-</body>
+  </section>
+  <!-- Projects-->
+  <section class="projects-section bg-light" id="projects">
+    <div class="container px-4 px-lg-5">
+      <!-- Featured Project Row-->
+      <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+          <!-- <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="output/Seaborn.png" alt="..." /></div> -->
+          <div class="col-xl-4 col-lg-5">
+              <div class="featured-text text-center text-lg-left">
+                  <h4>Analysis</h4>
+                  <p class="text-black-50 mb-0">Our Analysis.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- Signup-->
+    <section class="signup-section" id="signup">
+        <div class="container px-4 px-lg-5">
+            <!-- <div class="row gx-4 gx-lg-5"> -->
+                <!-- <div class="col-md-10 col-lg-8 mx-auto text-center"> -->
+                    <!-- <i class="far fa-paper-plane fa-2x mb-2 text-white"></i> -->
+                    <!-- <h2 class="text-white mb-5">Subscribe to receive updates!</h2> -->
+                    <!-- <form class="form-signup d-flex flex-column flex-sm-row">
+                        <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+      <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5">
+              <div class="col-md-3 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                      <div class="card-body text-center">
+                          <i class="fas fa-envelope text-primary mb-2"></i>
+                          <h4 class="text-uppercase m-0">Sarah Volk</h4>
+                          <hr class="my-4 mx-auto" />
+                          <div class="small text-black-50"><a href="https://github.com/volkx075"target="_blank">github.com/volkx075</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                      <div class="card-body text-center">
+                          <i class="fas fa-envelope text-primary mb-2"></i>
+                          <h4 class="text-uppercase m-0">Charlie Ito</h4>
+                          <hr class="my-4 mx-auto" />
+                          <div class="small text-black-50"><a href="https://github.com/itochax23"target="_blank">github.com/itochax23</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                      <div class="card-body text-center">
+                          <i class="fas fa-envelope text-primary mb-2"></i>
+                          <h4 class="text-uppercase m-0">Andy LaBounty</h4>
+                          <hr class="my-4 mx-auto" />
+                          <div class="small text-black-50"><a href="https://github.com/taestylobster"target="_blank">github.com/taestylobster</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                      <div class="card-body text-center">
+                          <i class="fas fa-envelope text-primary mb-2"></i>
+                          <h4 class="text-uppercase m-0">Jenn Pardue</h4>
+                          <hr class="my-4 mx-auto" />
+                          <div class="small text-black-50"><a href="https://github.com/jjpardue" target="_blank">github.com/jjpardue</a></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- <div class="social d-flex justify-content-center">
+              <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+              <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+              <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+          </div> -->
+      </div>
+    </section>
+  </body>
 
 </html>
