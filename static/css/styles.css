@@ -11409,7 +11409,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #20c997;
-  background-image: url("/assets/images/diamonds.jpg");
+  background-image: url("/static/assets/images/diamonds.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
