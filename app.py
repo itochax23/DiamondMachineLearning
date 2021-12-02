@@ -40,9 +40,7 @@ def predict():
 	matrix = [row]
 
 	return loaded_classifier.predict(matrix)[0]
-
-	input_df = pd.read_json(args_from_js)
-
+	
 	# Create a list of the output labels.
 	# prediction_labels = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
 

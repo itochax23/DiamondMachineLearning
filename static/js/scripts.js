@@ -86,5 +86,5 @@ async function submit() {
 		body: JSON.stringify(getData()),
 	});
 	const dataBack = await response.text();
-	alert(dataBack);
+	document.getElementById('pred').innerText=dataBack;
 }
