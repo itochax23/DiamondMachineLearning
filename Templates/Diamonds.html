@@ -1,165 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>How Do You Like Your Diamonds?</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="/static/css/styles.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>How Do You Like Your Diamonds?</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="/static/css/styles.css" rel="stylesheet" />
 
-  </head>
-  <body id="page-top">
+</head>
 
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#page-top">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars ms-1"></i>
-        </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#prediction">Prediction</a></li>
-                <li class="nav-item"><a class="nav-link" href="#analysis">Analysis</a></li>
-                <li class="nav-item"><a class="nav-link" href="#signup">Team</a></li>
-              </ul>
-          </div>
+<body id="page-top">
+
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars ms-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#prediction">Prediction</a></li>
+          <li class="nav-item"><a class="nav-link" href="#analysis">Analysis</a></li>
+          <li class="nav-item"><a class="nav-link" href="#signup">Team</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Masthead-->
-    <header class="masthead">
-      <div class="container">
-          <div class="masthead-heading text-uppercase">How Do You Like Your Diamonds?</div>
-          <div class="masthead-subheading">Predicting whether a diamond is natural or lab grown.</div>
-          <a class="btn btn-primary btn-xl text-uppercase" href="#about">Let's get started</a>
-      </div>
-    </header>
+  <!-- Masthead-->
+  <header class="masthead">
+    <div class="container">
+      <div class="masthead-heading text-uppercase">How Do You Like Your Diamonds?</div>
+      <div class="masthead-subheading">Predicting whether a diamond is natural or lab grown.</div>
+      <a class="btn btn-primary btn-xl text-uppercase" href="#about">Let's get started</a>
+    </div>
+  </header>
 
-    <!-- About-->
-    <section class="about-section text-center" id="about">
-      <div class="container px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5 justify-content-center">
-              <div class="col-lg-8">
-                  <h2 class="section-heading text-uppercase">Project Overview</h2>
-                  <p class="section-subheading text-muted">
-                    Our overview.
-                    
-                    <br> <br>Our dataset was collected by Brilliant Earth.  View the 
-                    <a href="https://www.kaggle.com/miguelcorraljr/brilliant-diamonds">Diamond Dataset</a>
-                    here.  The data was scraped on November 29th, 2020.  The data contains 8 characteristics of a diamond.
-                    We used logistic regression to predict if a diamond is natural or lab grown.
-                    
-                  </p>
-              </div>
-            </div>
+  <!-- About-->
+  <section class="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="section-heading text-uppercase">Project Overview</h2>
+          <p class="section-subheading text-muted">
+            Our overview.
+
+            <br> <br>Our dataset was collected by Brilliant Earth. View the
+            <a href="https://www.kaggle.com/miguelcorraljr/brilliant-diamonds">Diamond Dataset</a>
+            here. The data was scraped on November 29th, 2020. The data contains 8 characteristics of a diamond.
+            We used logistic regression to predict if a diamond is natural or lab grown.
+
+          </p>
         </div>
-      </section>
-
-    <section class="prediction-section text-center" id="prediction">
-      <div class = "ML_inputs">
-        <h2 class="section-heading text-uppercase"> Predict Diamond Type</h2>
-          <p class="section-subheading text-muted"> Enter the following values and characteristics to predict the Diamond type:</p>
-
-          <!-- Input section using a form and the Hypertext Transfer Protocol (HTTP) POST method -->
-          <!-- Pass the form input to 'url_for'.  Make sure that the url_for argument matches the route method name  in app.py -->
-    
-            <!-- We are using Jinja if statement to fill the previous values from the Flask server if data has been entered -->
-            <input type ="text" id = "shape" placeholder = "Round" />
-            <input type ="text" id = "cut"  placeholder = "Fair" />
-            <input type ="text" id = "color"  placeholder = "J" />
-            <input type ="text" id = "clarity"  placeholder = "SI2" />
-            <input type ="text" id = "carat"  placeholder = "0.30" />
-            <input type ="text" id = "price"  placeholder = "400" />
-            <input type ="text" id = "report"  placeholder = "GIA" />
-            <!-- Add in drop downs - google it -->
-            <button onclick = "submit()" class ="btn btn-secondary text-uppercase"> Predict</button>
-    
-
-          <br>
-              <h3 id="pred" class= "results"></h3>
-          <br>
-        <script src = "/static/js/scripts.js"></script>
-
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Analysis-->
-    <section class="analysis-section text-center" id="analysis">
-      <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8">
-              <h2 class="section-heading text-uppercase">Analysis</h2>
-              <p class="section-subheading text-muted">
-                Analysis
-                
-                <br> <br>
-                
-                <!-- Residual plot? -->
-                
-              </p>
-            </div>
-          </div>
+  <section class="prediction-section text-center" id="prediction">
+    <div class="ML_inputs">
+      <h2 class="section-heading text-uppercase"> Predict Diamond Type</h2>
+      <p class="section-subheading text-muted"> Enter the following values and characteristics to predict the Diamond
+        type:</p>
+
+      <!-- Input section using a form and the Hypertext Transfer Protocol (HTTP) POST method -->
+      <!-- Pass the form input to 'url_for'.  Make sure that the url_for argument matches the route method name  in app.py -->
+
+      <!-- We are using Jinja if statement to fill the previous values from the Flask server if data has been entered -->
+      <!-- <input type ="text" id = "shape" placeholder = "Round" /> -->
+      <!-- <div class="input-group mb-3"> -->
+      <select id="shape"></select>
+      <!-- </div> -->
+      <select type="text" id="cut" ></select>
+      <select type="text" id="color" ></select>
+      <select type="text" id="clarity" ></select>
+      <input type="text" id="carat" placeholder="0.30" />
+      <input type="text" id="price" placeholder="400" />
+      <select type="text" id="report" ></select>
+      <!-- Add in drop downs - google it -->
+      <button onclick="submit()" class="btn btn-secondary text-uppercase"> Predict</button>
+
+
+      <br>
+      <h3 id="pred" class="results"></h3>
+      <br>
+      <script src="/static/js/scripts.js"></script>
+
+    </div>
+  </section>
+
+  <!-- Analysis-->
+  <section class="analysis-section text-center" id="analysis">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="section-heading text-uppercase">Analysis</h2>
+          <p class="section-subheading text-muted">
+            Analysis
+
+            <br> <br>
+
+            <!-- Residual plot? -->
+
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Team-->
-    <section class="page-section bg-light" id="team">
-      <div class="container">
-          <div class="text-center">
-              <h2 class="section-heading text-uppercase">Our Team</h2>
-              <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
-          </div>
-          <div class="row">
-              <div class="col-lg-4">
-                  <div class="team-member">
-                      <!-- <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." /> -->
-                      <h4>Sarah Volk</h4>
-                      <p class="text-muted">Team Member</p>
-                      <a class="btn btn-dark btn-social mx-2" href="https://github.com/volkx075"><i class="fab fa-github"></i></a>
-                  </div>
-              </div>
-              <div class="col-lg-4">
-                  <div class="team-member">
-                      <!-- <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." /> -->
-                      <h4>Charlie Ito</h4>
-                      <p class="text-muted">Team Member</p>
-                      <a class="btn btn-dark btn-social mx-2" href="https://github.com/itochax23"><i class="fab fa-github"></i></a>
-                  </div>
-              </div>
-              <div class="col-lg-4">
-                  <div class="team-member">
-                      <!-- <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." /> -->
-                      <h4>Andy LaBounty</h4>
-                      <p class="text-muted">Team Member</p>
-                      <a class="btn btn-dark btn-social mx-2" href="https://github.com/taestylobster"><i class="fab fa-github"></i></a>
-                  </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="team-member">
-                    <!-- <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." /> -->
-                    <h4>Jenn Pardue</h4>
-                    <p class="text-muted">Team Member</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/jjpardue"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-          </div>
+  <!-- Team-->
+  <section class="page-section bg-light" id="team">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Our Team</h2>
+        <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
       </div>
-    </section>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="team-member">
+            <!-- <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." /> -->
+            <h4>Sarah Volk</h4>
+            <p class="text-muted">Team Member</p>
+            <a class="btn btn-dark btn-social mx-2" href="https://github.com/volkx075"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="team-member">
+            <!-- <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." /> -->
+            <h4>Charlie Ito</h4>
+            <p class="text-muted">Team Member</p>
+            <a class="btn btn-dark btn-social mx-2" href="https://github.com/itochax23"><i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="team-member">
+            <!-- <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." /> -->
+            <h4>Andy LaBounty</h4>
+            <p class="text-muted">Team Member</p>
+            <a class="btn btn-dark btn-social mx-2" href="https://github.com/taestylobster"><i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="team-member">
+            <!-- <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." /> -->
+            <h4>Jenn Pardue</h4>
+            <p class="text-muted">Team Member</p>
+            <a class="btn btn-dark btn-social mx-2" href="https://github.com/jjpardue"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Team
+  <!-- Team
     <section class="contact-section bg-black">
       <div class="container px-4 px-lg-5">
           <div class="row gx-4 gx-lg-5">
@@ -209,36 +219,37 @@
               <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
               <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
           </div> -->
-      </div>
-    </section> -->
+  </div>
+  </section> -->
 
-    <!-- Footer -->
-    <footer class="footer py-4">
-      <div class="container">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">
-            Credits:
-            <br> <br> Built with Bootstrap 5.1.3. 
-            <!-- <br> <br> Photos by <a href="https://www.popularmechanics.com/science/environment/a22173683/scientists-find-quadrillions-of-tons-of-diamonds-beneath-earths-surface/">Mina De La O</a> from <a href="https://freeimages.com">gettyimages</a> </div></footer> -->
-          </p>
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="col-lg-8 mx-auto text-center">
+        <p class="large text-muted">
+          Credits:
+          <br> <br> Built with Bootstrap 5.1.3.
+          <!-- <br> <br> Photos by <a href="https://www.popularmechanics.com/science/environment/a22173683/scientists-find-quadrillions-of-tons-of-diamonds-beneath-earths-surface/">Mina De La O</a> from <a href="https://freeimages.com">gettyimages</a> </div></footer> -->
+        </p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-lg-start">Copyright &copy; Diamond Type Prediction 2021</div>
+        <div class="col-lg-4 my-3 my-lg-0">
+          <a class="btn btn-dark btn-social mx-2" href="https://github.com/itochax23/DiamondMachineLearning"><i
+              class="fab fa-github"></i></a>
         </div>
-          <div class="row align-items-center">
-              <div class="col-lg-4 text-lg-start">Copyright &copy; Diamond Type Prediction 2021</div>
-              <div class="col-lg-4 my-3 my-lg-0">
-                  <a class="btn btn-dark btn-social mx-2" href="https://github.com/itochax23/DiamondMachineLearning"><i class="fab fa-github"></i></a>
-              </div>
-              <div class="col-lg-4 text-lg-end">
-                  <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                  <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-              </div>
-          </div>
+        <div class="col-lg-4 text-lg-end">
+          <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+          <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="/static/js/scripts.js"></script> -->
-  </body>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="/static/js/scripts.js"></script> -->
+</body>
 
 </html>
