@@ -7,22 +7,22 @@
 // Scripts
 // 
 
-function isPositiveNumberText(x){
-	const numb = +x;
-	return numb == x && isFinite(x);
-}
+// function isPositiveNumberText(x){
+// 	const numb = +x;
+// 	return numb == x && isFinite(x);
+// }
 
-const CONFIG = [
-	{key: 'shape', type: 'option', values:  { "Asscher": 1, "Cushion": 2, "Emerald": 3, "Heart": 4, "Marquise": 5, "Oval": 6, "Pear": 7, "Princess": 8, "Radiant": 9, "Round": 10 }},
-	{key: 'price', type: 'input', validation: isPositiveNumberText, mapping: x => +x}
-]
+// const CONFIG = [
+// 	{key: 'shape', type: 'option', values:  { "Asscher": 1, "Cushion": 2, "Emerald": 3, "Heart": 4, "Marquise": 5, "Oval": 6, "Pear": 7, "Princess": 8, "Radiant": 9, "Round": 10 }},
+// 	{key: 'price', type: 'input', validation: isPositiveNumberText, mapping: x => +x}
+// ]
 
 const CLEANUP_MAPS = {
 	shape: { "Asscher": 1, "Cushion": 2, "Emerald": 3, "Heart": 4, "Marquise": 5, "Oval": 6, "Pear": 7, "Princess": 8, "Radiant": 9, "Round": 10 },
 	cut: { "Fair": 1, "Good": 2, "Very Good": 3, "Ideal": 4, "Super Ideal": 5 },
 	color: { "J": 1, "I": 2, "H": 3, "G": 4, "F": 5, "E": 6, "D": 7 },
 	clarity: { "SI2": 1, "SI1": 2, "VS2": 3, "VS1": 4, "VVS2": 5, "VVS1": 6, "IF": 7, "FL": 8 },
-	report: { "GIA": 1, "HRD": 2, "IGI": 3, "GCAL": 4 },
+	report: { "GIA": 1, "HRD": 2, "IGI": 3, "GCAL": 4 }
 };
 
 window.addEventListener('DOMContentLoaded', event => {
