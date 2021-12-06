@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>Diamond type prediction</title>
+  <title>Diamond Type Prediction</title>
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <!-- JQuery -->
@@ -36,6 +36,7 @@
         <ul class="navbar-nav ms-auto py-4 py-lg-0">
           <li class="nav-item"><a class="nav-link" href="#about">Overview</a></li>
           <li class="nav-item"><a class="nav-link" href="#prediction">Prediction</a></li>
+          <li class="nav-item"><a class="nav-link" href="#model">Model</a></li>
           <li class="nav-item"><a class="nav-link" href="#analysis">Analysis</a></li>
           <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
         </ul>
@@ -46,7 +47,7 @@
   <!-- Masthead-->
   <header class="masthead">
     <div class="container">
-      <div class="masthead-heading">Diamond type prediction</div>
+      <div class="masthead-heading">Diamond Type Prediction</div>
       <div class="masthead-subheading">Use machine learning to predict if a diamond is natural or lab grown.</div>
       <a class="btn btn-primary btn-xl" href="#about">Get started</a>
     </div>
@@ -97,8 +98,8 @@
       <br><br><h3>Your diamond is <h3 id="pred" class="results"></h3>
       <br>
       <script src="/static/js/scripts.js"></script>
-<br><br>
-    <h2>Characteristics explained</h2>
+    <br><br>
+    <h3>Characteristics explained</h3>
             <p><b>Shape</b> describes the geometric appearance of the diamond.</p>
             <p><b>Carat</b> is the weight of the diamond.</p>
             <p><b>Cut</b> is the symmetry and reflective qualities of the diamond.</p>
@@ -106,7 +107,23 @@
             <p><b>Clarity</b> tells you if there are imperfections or 'inclusions' - a flawless diamond has none. FL is the highest grade possible.</p>
             <p><b>Report</b> is a diamond grading report or certificate from an independent lab.</p>
           </div>
-</section>
+  </section>
+
+  <!-- About-->
+  <section class="about-section text-center" id="model">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="section-heading">The Model</h2>
+          <p class="section-subheading text-muted">
+            Initially, our plan was to do a Multiple Linear Regression Model to predict price. However, after running the model, our accuracy was only 0.31.
+            Our next thought was to do a Logistic Regression Model to predict the diamond type (natural or lab-grown). After running the logistic model, 
+            we received an accuracy of 0.98. This is a significant improvement from our Multiple Linear Regresssion Model. From our logistic model, we can predict the type of diamond.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Analysis-->
   <section class="analysis-section text-center" id="analysis">
@@ -118,7 +135,7 @@
             Here's what we found when we dug into the data.
 
             <br> <br>
-            <!-- Residual plot and other graphs? -->
+            <!-- Visuals -->
             <h3>Seaborn visualization</h3>
             <image src="/static/assets/images/heatmap.png"></image>
             <p>Explain what is going on</p>
@@ -186,11 +203,6 @@
               </div>
           </div>
         </div>
-        <!-- <div class="social d-flex justify-content-center">
-            <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-            <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-            <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-        </div> -->
     </div>
     </div>
   </section>
@@ -205,7 +217,7 @@
           https://www.gemsociety.org/article/lab-grown-diamond-pricing/<br>
           <br> <br> 
           Special thanks to Farshad Esnaashari of the University of Minnesota, and the TAs Stephen, Benji, David and Gabe for encouragement, wisdom, and support.<br>Built with Bootstrap 5.1.3.
-          <!-- <br> <br> Photos by <a href="https://www.popularmechanics.com/science/environment/a22173683/scientists-find-quadrillions-of-tons-of-diamonds-beneath-earths-surface/">Mina De La O</a> from <a href="https://freeimages.com">gettyimages</a> </div></footer> -->
+          <!-- <br> <br> Photo by <a href="https://www.popularmechanics.com/science/environment/a22173683/scientists-find-quadrillions-of-tons-of-diamonds-beneath-earths-surface/">Mina De La O</a> from <a href="https://freeimages.com">gettyimages</a> </div></footer> -->
         </p>
       </div>
       <div class="row align-items-center">
