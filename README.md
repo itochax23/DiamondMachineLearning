@@ -1,128 +1,67 @@
-# Diamonds prediction with machine learning
+# Diamonds Prediction With Machine Learning
 
 ## Overview
-We wanted to see if machine learning could predict whether a diamond with certain characteristics was natural or lab-grown. We also wanted to find out what characteristics of diamonds made them valuable.
+Our project goal was to see if a logistic regression, machine learning, model could predict whether a diamond with certain characteristics was natural or lab-grown. We also wanted to find out which characteristic(s) of a diamond makes it valuable. 
 
-### Role Distribution
-Each team member has choosen a shape, with each shape responsible for a specific task. The shapes to choose from are square, circle, triangle, and X. However, the one initially assigned the X role will transition through the other roles for the remaining segments.  
-■: Primary for setup of github repository, and ensuring everyone has their own branch to work from. Creating visualizations to help determine dashboards that best present data for storytelling.    
-▲: Primary for setting up a machine learning model, from concept to execution, with input from the team.    
-●: Primary for creating mockup database, for testing and submission, with input from the team. Contributes to interactive elements and web presence.    
-✖: Primary for concept design of interactive elements and web presence, in addition to project documentation. 
+Part of our project was to scrape and clean the data and use subsequent logistic regression to determine the origin of the diamond: natural or lab-grown. 
 
-## Results
-Text and images and links, etc.
+Working remotely as a team of four, we assigned roles to each team member and dug into the front and backend of our predictive website to create a user-friendly and esthetically pleasing site which would be both educational and interactive. 
 
-## Conclusion
-Text and keep it short!
+Users of the site are able to input diamond attributes of their choice and our model will deliver the result of their diamond based on user input.
 
----
+## Dataset
+Our dataset was collected by Miguel Corral, Jr. The data contains eight characteristics of a diamond: shape, cut, color, clarity, carat, price, type and report. 
 
-# Technologies Used
-## Data Cleaning and Analysis
-Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
+https://www.kaggle.com/miguelcorraljr/brilliant-diamonds
 
-## Database Storage
-Mongo is the database we intend to use, and we will integrate Flask to display the data.
+## Model
+A logistic regression model was used to predict the diamond type. This model allows us to predict binary outcomes, meaning that there are only two possible results. 
 
-## Machine Learning
-SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
+The features we used for the model were shape, cut, color, clarity, carat, price, and report. Our target was the diamond's type, either natural or lab-grown. After running the logistic model, an accuracy score of 0.98 was achieved. 
 
-## Dashboard
-In addition to using a Flask template, we will also integrate Tableau for a fully functioning and interactive dashboard.
+## Procedures
 
----
-# Instructions
-## Deliverable #1:
-Description of source data: We have a data set from Kaggle of 119,307 samples of diamonds.
-* Link to dataset: https://www.kaggle.com/miguelcorraljr/brilliant-diamonds
+### Clone this repository to your desktop and then complete the following: 
+1. Navigate to the folder that contains `app.py` and launch a GitBash (Windows) or Terminal (Mac).
+2. Type `python app.py` and then hit ENTER.
+3. Enter the following address in your Chrome browser: http://127.0.0.1:5000/
+4. Input your preferences for each diamond attribute: shape, cut, color, clarity, carat, price, type and report. 
+5. Click `predict` to see your diamond type prediction! 
 
-Characteristics in dataset: 
-* Shape: Round, Emerald, etc.
-* Price (we have in dataset and will use for live predictions): US dollars
-* Carat (Unit of measurement used to describe the weight of a diamond)
-* Cut: Ideal, Very Good, etc.
-* Color: Natural color or lack of color visible within a diamond, based on the GIA grade scale
-* Clarity: Visibility of natural microscopic inclusions and imperfections within a diamond
-* Diamond Certification: report aka Diamond certificate or grading report provided by an independent gemology lab
-* Type: natural or lab-grown
+## Technologies Used
 
-### Questions to be answered by project
-1. How do these values affect the price? 
-1. Which characteristic adds more value to the price? 
-1. Can we predict a diamond’s price off of its characteristic? 
-1. Based on lab vs. natural, are the lab-grown diamonds rated higher?
-2. What, if any, characteristics cannot be replicated by lab-grown diamonds?
+### Data Cleaning and Analysis
+Pandas was used to clean the data and perform an exploratory analysis. Further analysis was completed using Python.
 
-### Process decisions made
-* Hypothesis: Lab-grown diamonds will have a more affordable price for similar characteristics of that of a natural diamond. 
-* Database Engine: Postgres
-* Machine Learning Model: Logistic Regression for predicting type (lab vs. natural).
-* Live Predictions: Yes
+### Database Storage
+Postgres was the database we used, integrating it into Jupyter Notebook as a DataFrame. 
 
----
+### Machine Learning
+SciKitLearn is the machine learning library that was used to create a classifier. 
 
-## Deliverable #2:
-Initial ML model is developed. Must have a Jupyter notebook containing:
-* Description of preliminary data pre-processing
-* Description of features used in the model
-* Description of how data was split for training/testing
-* Explanation of model choice, including benefits and limitations
-* Preliminary model evaluation
+### Visuals
+We achieved visuals using Tableau and Seaborn. 
 
-<a href="https://github.com/itochax23/DiamondMachineLearning/blob/388c5850a537244451715b2b2ed2b320101851cb/Diamond_Model.ipynb">Diamond_Model.ipynb
+### Dashboard
+We used Javascript, HTML and CSS to create the dashboard. Additionally, we used a Flask template and integrated Tableau for a fully functioning and interactive dashboard.
 
-### Database development
-* Database schema scripts:\
-![Schema Script](Querries/schema.sql)
-* Jupyter notebook for ETL:\
-![ETL - Data Cleaning](Diamonds_Data_Cleaning.ipynb)
-* Instructions on how to create the database
-* Download dataset from: https://www.kaggle.com/miguelcorraljr/brilliant-diamonds
-* Write queries to create table in PgAdmin.
-* Import dataset into table.
-* Export table to a csv file.
-* Import csv as a dataframe in Jupyter Notebook
-* Clean dataframe by converting the following non-numerical columns to numerical reference points:
-  * Shape column (Alphabetical): Asscher = 1, Cushion = 2, Emerald = 3, Heart = 4, Marquise = 5, Oval = 6, Pear = 7, Princess = 8, Radiant = 9, Round = 10
-  * Cut column (lowest grade to highest grade): Fair = 1, Good = 2, Very Good = 3, Ideal = 4, Super Ideal = 5
-  * Color column (lowest grade to highest grade): J = 1, I = 2, H = 3, G = 4, F = 5, E = 6, D = 7
-  * Clarity column (lowest grade to highest grade): SI2 = 1, SI1 = 2, VS2 = 3, VS1 = 4, VVS2 = 5, VVS1 = 6, IF = 7, FL = 8
-  * Report column (no particular order): GIA = 1, HRD = 2, IGI = 3, GCAL = 4
-  * Type column (boolean values): natural = 1, lab = 2
-* Further clean the dataframe by removing the unneeded url and date_fetched column
-* Export the cleaned dataframe into a csv file.
- 
-### Dashboard blueprint
-* Interactive elements
-* Tools/technologies for the creating the dashboard: HTML/CSS for website. Flask for live prediction.\
-**Title: How do you like your diamonds?**  
+## Gratitude
+We would like to thank our instructor, Farshad Esnaashari, for his guidance and leadership through this six-month certification program. As well, we want to highlight the efforts of the TAs in this program: Benji, Stephen, David and Gabe, for their concentrated efforts and experiential suggestions in making each module and final project come to fruition.  
 
-**Subtitle:** Predicting lab-grown or natural diamonds.
-Background image: Diamonds  
+Thank you! \
+Charlie Ito, Sarah Volk, Andy LaBounty and Jenn Pardue
 
-**Header:**
-* Home Button
-* About Button - Jumps to Project Overview Section
-* Live Prediction Button - Jumps to Live Prediction
-* Analysis Button - Jumps to Analysis
-* Team Button
 
-**Project Overview Section:**. 
-* Intro: What the project is about and what the user will be doing.  
 
-**Live Prediction Section:**. 
-* This will have the prediction tool to input xyz for a predicted output.
-* The user will input the data.
-* Pre-chosen inputs as an option for user. (?)  
 
-**Analysis Section:**  
-* This will have the model and accuracy results.
-* Along with some possible visuals.  
+References: \
+https://www.lumeradiamonds.com/diamond-education/diamond-carat-weight \
+https://shop.kenanddanadesign.com/pages/lab-diamonds-mined-diamonds-cost-prices \
+https://www.gemsociety.org/article/lab-grown-diamond-pricing/
 
-**Team Section:**
-*  Contains our names and GitHub urls.
-*  Contains credits at the bottom.
+
+Charlie to put in url for hero image here 
+
 
 
  
