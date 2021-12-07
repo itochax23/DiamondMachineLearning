@@ -1,7 +1,7 @@
-# Bootcamp Team 1
+# Diamonds prediction with machine learning
 
 ## Overview
-text and image. Whatcha doin. Why?
+We wanted to see if machine learning could predict whether a diamond with certain characteristics was natural or lab-grown. We also wanted to find out what characteristics of diamonds made them valuable.
 
 ### Role Distribution
 Each team member has choosen a shape, with each shape responsible for a specific task. The shapes to choose from are square, circle, triangle, and X. However, the one initially assigned the X role will transition through the other roles for the remaining segments.  
