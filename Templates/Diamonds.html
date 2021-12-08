@@ -75,7 +75,8 @@
   <section class="prediction-section bg-light text-center" id="prediction">
     <div class="ML_inputs">
       <h2 class="section-heading"> Predict a diamond's type</h2>
-      <p class="section-subheading text-muted"> Pick an option from all of the following fields to predict if a diamond is natural or lab grown: shape, cut, color, clarity, carat, price, and report.</p>
+      <p class="section-subheading text-muted"> Pick an option from all of the following fields to predict if a diamond is natural or lab grown: 
+      <br>shape, cut, color, clarity, carat, price, and report.</p>
 
       <!-- Input section using a form and the Hypertext Transfer Protocol (HTTP) POST method -->
       <!-- Pass the form input to 'url_for'.  Make sure that the url_for argument matches the route method name  in app.py -->
@@ -117,10 +118,7 @@
         <div class="col-lg-8">
           <h2 class="section-heading">The model</h2>
           <p class="section-subheading text-muted">
-            Initially, our plan was to do a Multiple Linear Regression Model to predict price. However, after running the model, our accuracy was only 0.31.
-            Our next thought was to do a Logistic Regression Model to predict the diamond type (natural or lab-grown). The features we used for the model are shape,
-            cut, color, clarity, carat, price, and report. Our target is the diamond's type, either natural or lab-grown. After running the logistic model, 
-            we received an accuracy of 0.98. This is a significant improvement from our Multiple Linear Regresssion Model. From our logistic model, we can predict the type of diamond.
+            Initially, our plan was to do a Multiple Linear Regression Model to predict price. However, after running the model, our accuracy was only 0.31. In the end, we decided to do a Logistic Regression Model to predict the diamond type. The features we used for the model were shape, cut, color, clarity, carat, price, and report. Our target is the diamond's type, natural or lab-grown. After running the logistic model, we received an accuracy of 0.98. This was a significant improvement from our Multiple Linear Regresssion Model. From our logistic model, we can predict the type of diamond.
           </p>
         </div>
       </div>
