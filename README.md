@@ -57,10 +57,8 @@ Charlie Ito, Sarah Volk, Andy LaBounty and Jenn Pardue
 References: \
 https://www.lumeradiamonds.com/diamond-education/diamond-carat-weight \
 https://shop.kenanddanadesign.com/pages/lab-diamonds-mined-diamonds-cost-prices \
-https://www.gemsociety.org/article/lab-grown-diamond-pricing/
-
-
-Charlie to put in url for hero image here 
+https://www.gemsociety.org/article/lab-grown-diamond-pricing/ \
+https://pixabay.com/photos/diamonds-gem-jewel-crystal-glass-4231176/ 
 
 
 
