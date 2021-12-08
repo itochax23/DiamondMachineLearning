@@ -3,7 +3,7 @@
 ## Overview
 Our project goal was to see if a logistic regression, machine learning, model could predict whether a diamond with certain characteristics was natural or lab-grown. We also wanted to find out which characteristic(s) of a diamond makes it valuable. 
 
-Part of our project was to scrape and clean the data and use subsequent logistic regression to determine the origin of the diamond: natural or lab-grown. 
+Part of our project was to import and clean the data and use subsequent logistic regression to determine the origin of the diamond: natural or lab-grown. 
 
 Working remotely as a team of four, we assigned roles to each team member and dug into the front and backend of our predictive website to create a user-friendly and esthetically pleasing site which would be both educational and interactive. 
 
@@ -58,7 +58,7 @@ References: \
 https://www.lumeradiamonds.com/diamond-education/diamond-carat-weight \
 https://shop.kenanddanadesign.com/pages/lab-diamonds-mined-diamonds-cost-prices \
 https://www.gemsociety.org/article/lab-grown-diamond-pricing/ \
-https://pixabay.com/photos/diamonds-gem-jewel-crystal-glass-4231176/ 
+Image: https://pixabay.com/photos/diamonds-gem-jewel-crystal-glass-4231176/ 
 
 
 
