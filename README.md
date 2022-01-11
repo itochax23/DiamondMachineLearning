@@ -21,7 +21,10 @@ The features we used for the model were shape, cut, color, clarity, carat, price
 
 ## Procedures
 
-### Clone this repository to your desktop and then complete the following: 
+### View the site on heroku
+https://diamondmachinelearning.herokuapp.com/
+
+### Alternatively, clone this repository to your desktop and run it locally: 
 1. Navigate to the folder that contains `app.py` and launch a GitBash (Windows) or Terminal (Mac).
 2. Type `python app.py` and then hit ENTER.
 3. Enter the following address in your Chrome browser: http://127.0.0.1:5000/
@@ -51,15 +54,8 @@ We would like to thank our instructor, Farshad Esnaashari, for his guidance and 
 Thank you! \
 Charlie Ito, Sarah Volk, Andy LaBounty and Jenn Pardue
 
-
-
-
 References: \
 https://www.lumeradiamonds.com/diamond-education/diamond-carat-weight \
 https://shop.kenanddanadesign.com/pages/lab-diamonds-mined-diamonds-cost-prices \
 https://www.gemsociety.org/article/lab-grown-diamond-pricing/ \
 Image: https://pixabay.com/photos/diamonds-gem-jewel-crystal-glass-4231176/ 
-
-
-
- 
